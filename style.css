@@ -1,6 +1,19 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito+Sans);
+@import url(https://fonts.googleapis.com/css?family=Rubik);
+
+html {
+    line-height: 1.15;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
 body {
     margin: 0;
     padding: 0;
+    font-size: 100%;
+    line-height: 1.5;
+    color: #555;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 .home {
@@ -12,6 +25,7 @@ body {
     Justify-content: center;
     background: #012;
     margin-bottom: 25px;
+    z-index: 1;
 }
 
 .hero-content h1{
@@ -24,12 +38,6 @@ body {
     font-size: 15px;
     color: teal;
     margin: 10px;
-}
-
-.hero-content img{
-    width: 130px;
-    height: 130px;
-    border-radius: 50%;
 }
 
 .hero-icons a{
@@ -68,15 +76,15 @@ body {
     margin: 10px;
     margin-bottom: 30px;
 }
+.about img{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
 
 .about h1{
     text-align: center;
     font-size: 30px;
-}
-
-.about img{
-    width: 40px;
-    height: 40px;
 }
 
 .about-details {
@@ -89,37 +97,51 @@ body {
     padding: 30px;
 }
 
-#projects {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    Justify-content: center;
-    margin: 35px;
-}
-
-.projects h1{
-    font-size: 30px;
-}
-
-.projects h2{
-    font-size: 20px;
-}
-
-.projects .imgs img{
-  width: 60%;
-}
-
-.projects .content img{
-    margin: 10px;
+.skills img{
     width: 40px;
     height: 40px;
 }
 
-.projects .content p{
-    margin: 20px;
+#projects {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+. projects h1 {
+    text-align: center;
+    margin: 15px;
+}
+.project-details {
+    margin: 20px auto;
+}
+.img-left img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
 }
 
-.projects .project-link {
+.img-right img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.content-right img {
+    width: 32px;
+    height: 32px;
+}
+
+.content-left img {
+    width: 32px;
+    height: 32px;
+}
+.project-details .project-link {
     font-weight: bold;
     color: #012;
     background: teal;
@@ -157,46 +179,35 @@ body {
 }
 
 
-  #projects {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    Justify-content: center;
-    margin: 15px;
 }
+@media only screen and (min-width:550px) {
 
-.projects h1{
-    font-size: 30px;
-}
+     .content-left {
+        margin-left: 0;
+        width: 48%;
+    }
 
-.projects h2{
-    font-size: 20px;
-}
+    
+    .content-right,
+    .img-right {
+        float: right;
+        width: 48%;
+    }
 
-.projects .imgs img{
-    width: 90%;
-}
+    .img-right img {
+        float: right;
+        margin-top: 80px;
+    }
+    
+    .content-left,
+    .img-left {
+        float: left;
+        width: 48%;
+    }
 
-.projects .content img{
-    margin: 10px;
-    width: 40px;
-    height: 40px;
+    .img-left img {
+        float: left;
+        margin-top: 30px;
+    }
 }
-
-.projects .content p{
-    margin: 20px;
-}
-
-.projects .project-link {
-    font-weight: bold;
-    color: #012;
-    background: teal;
-    text-decoration: none;
-    border: 1px solid teal;
-    padding: 10px;
-    margin: 5px;
-    border-radius: 5px;
-}
-}
-
 
